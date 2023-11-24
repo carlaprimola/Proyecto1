@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./css/burger.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;600;800&family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>MKT School - Register</title>
+  </head>
+
+  <body>
+
+    <!--HEADER-->
+    <header>
+      <a href="./index.html"><img class="logo" src="./images/Logo.png" alt="logo"></a>
+      <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+          <li><a href="./gallery.html">Galería</a></li>
+          <li><a href="./login.html">Inicio sesión</a></li>
+          <li><a href="./cursos.html">Cursos</a></li>
+          <li><a href="./form.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+
+    </header>
+    
+
+    <!--TEXTO-->
+    <main class="contenido-registro">
+      <article class="titulo-principal-register">
+        <img src="./images/muneco.svg" alt="icono formulario">
+        <h2 class="bienvenida">¡Bienvenido/a!</h2>
+        <p>
+          Accede ahora a todos nuestros cursos
+        </p>
+        
+        <p class="subtitle-blanco">
+          Por favor, completa los campos para poder acceder al curso 
+        </p>
+      </article>
+  
+      <!--FORMULARIO-->
+        <form class="caja-formulario" action="./thanks.html" method="get">
+  
+          <label>
+            Nombre: <input class="campo-formulario" type="text" name="nombre" required>
+          </label>
+
+          <label>
+            Apellidos: <input class="campo-formulario" type="text" name="apellidos" required>
+          </label>
+
+          <label>
+            Email:<input class="campo-formulario" type="text" name="email" autocomplete="off" required>
+          </label>
+
+          <label>
+            Contraseña:<input class="campo-formulario" type="password" name="contrasena"  autocomplete="off" required>
+          </label>
+          <label class="terminos">
+            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">  Acepto los Términos y Condiciones
+          </label>
+                   
+         <!--CTA-->               
+          <div class="button-form">
+            <a href="./thanks.html">
+              <input type="submit" value="Crear mi cuenta" class="cta-formulario"></input>
+            </a>
+          </div>
+
+          <div class="enlace-registro-form">
+            <a href="./login.html">Ya tengo cuenta</a>
+          </div>
+          
+  
+        </form>  
+                                  
+          
+            
+        <!--IMAGENES-->
+        <!-- <figure class="image">
+          <img class="foto-centro" src="images/imagen-business-corta.png" />
+          <img class="foto-atras" src="images/imagen fondo.png" />
+        </figure>
+        </main> -->
+          
+        <script src="https://kit.fontawesome.com/3557bb0089.js" crossorigin="anonymous"></script> <!--Fontawesome-->
+        <script src="./javascript/burger.js"></script>  
+      </body>
+    </html>
+   
+    
+
+      
+    
+
+    
+

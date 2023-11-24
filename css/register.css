@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(255,208,165,1);
+}
+
+main{
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+article{
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+
+form.caja-formulario{
+    background-color: #ffff;
+    box-shadow: 7px 13px 37px #838383;
+    border-radius: 8px;
+
+    width: 100%;
+    height: 340px;
+    
+    padding: 31px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+label{
+   font-weight: 900;
+   cursor: pointer;
+   gap: 5px;
+
+   display: flex;
+   justify-content: space-between;
+}
+
+.formulario__label{
+    display: block;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+input{
+    width:80%;
+    height: 70%;
+    background: #fff;
+    border: #bdbbbb solid 0.5px;
+    border-radius: 4px;
+       
+    transition: .3s ease all;   
+   
+}
+
+input:hover{
+    background-color: rgb(247, 208, 190);  
+}
+
+.terminos{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#terminos{
+    width: 2%;
+    position: relative;
+    bottom: 3px;
+}
+
+.button-form{
+    display: flex;
+    justify-content: center;
+}
+
+.cta-formulario{
+    width: 100%;
+    padding: 10px 100px 10px;
+
+    background: #fe5e54;
+    border: none;
+    border-radius: 5px;
+
+    font-size: medium;
+    color: #ffff;
+
+    display: flex;
+    justify-content: center;
+}
+
+.cta-formulario:hover{
+    background-color:brown; 
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #fe5e54;
+}
+
+
+
+
+/*Mediaqueries*/
+@media  screen and (max-width: 800px) {
+    .formulario{
+        grid-template-columns: 1fr;
+    }
+
+    .formulario__grupo-terminos, 
+.formulario__mensaje, 
+.formulario__grupo-btn-enviar{
+    grid-column: 1;
+
+}
+
+.formulario__btn{
+    width: 100%;
+}
+}
+
+

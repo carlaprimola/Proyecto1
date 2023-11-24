@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/burger.css" />
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img class="logo" src="./images/Logo.png" alt="logo"></a>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+  
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+            <li><a href="./gallery.html">Galería</a></li>
+            <li><a href="./login.html">Inicio sesión</a></li>
+            <li><a href="./register.html">Registro</a></li>
+            <li><a href="./cursos.html">Cursos</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+  
+  
+      </header>
+   <main>
+        <form action="" class="formulario" id="formulario">
+            <!-- Grupo Usuario -->
+           <div class="formulario__grupo formulario__grupo-incorrecto" id="grupo__usuario">
+                <label for="usuario" class="formulario__label">Usuario</label>
+            <div class="formulario__grupo__input">
+                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123" autocomplete="off">
+                
+                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error">El usuario tiene que ser de 4 a 6 dígitos</p>
+           </div> 
+        <!-- Grupo Nombre -->
+           <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+            <div class="formulario__grupo__input">
+                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Jhon" autocomplete="off">
+                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error">El nombre tiene que de mínimo 4 dígitos</p>
+           </div> 
+
+            <!-- Grupo Contraseña -->
+            <div class="formulario__grupo" id="grupo__password">
+                <label for="password" class="formulario__label">Contraseña</label>
+                <div class="formulario__grupo__input">
+                    <input type="password" class="formulario__input" name="password" id="password" autocomplete="off">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos</p>
+               </div> 
+
+            <!-- Grupo Contraseña2 -->
+            <div class="formulario__grupo" id="grupo__password2">
+                <label for="password2" class="formulario__label">Contraseña</label>
+                <div class="formulario__grupo__input">
+                    <input type="password" class="formulario__input" name="password2" id="password2" autocomplete="off">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">Ambas contraseñas deben ser iguales</p>
+               </div>
+
+            <!-- Grupo Email -->
+           <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo" class="formulario__label">Correo electrónico</label>
+            <div class="formulario__grupo__input">
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com" autocomplete="off">
+                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones y guión bajo</p>
+           </div> 
+
+            <!-- Grupo Teléfono -->
+              <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo__input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="666666666" autocomplete="off">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">El teléfono solo puede contener números y el máximo son 14 dígitos</p>
+               </div> 
+            <!-- Grupo términos y condiciones -->
+               <div class="formulario__grupo" id="grupo__terminos__grupo">
+                    <label for="terminos" class="formulario__label" id="terms">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">Acepto los Términos y Condiciones
+                    </label>
+               </div>
+            <!-- Grupo error mensaje -->
+               <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor rellena el formulario</p>
+               </div>
+
+               <!-- Grupo boton Enviar -->
+               <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button class="formulario__btn" type="submit">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Formulario enviado!</p>
+               </div>
+        </form>
+   </main>
+
+
+    
+    <script src="https://kit.fontawesome.com/3557bb0089.js" crossorigin="anonymous"></script> <!--Fontawesome-->
+    <script src="./javascript/burger.js"></script>
+    <script src="./javascript/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+   
+    background-color: rgb(255,208,165,1);
+  }
+  
+  
+  .logo {
+    width: 100%; /* Ajusta el tamaño de tu logo según sea necesario */
+
+    max-width: 10rem;
+    padding: 10px;
+    margin: 0 0 0 10px;
+    
+    display: flex;
+  }
+  
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgb(255,208,165,1);
+    box-shadow: #838383;
+    width: 100%;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+
+.main-container{
+    display: flex;
+    flex-direction: column; 
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+figure.image{
+    display: flex;
+    width: 70%;
+}
+
+.foto-centro{
+    width: 50%;
+    height: 1112px;
+        
+    margin-left: 75%;
+    margin-top: -750px;
+    
+    box-shadow: 0 0 30px 0 rgb(131, 128, 128);
+    z-index: -1;
+}
+
+.foto-atras{
+    width: 120%;
+    height: 1000px;
+        
+    margin-left: -15%;
+    margin-top: -800px;
+    
+    box-shadow: 0 0 10px 0 rgb(131, 128, 128);
+    z-index: -2;
+}
+
+
+
+h1{
+    width: 100%;
+    font-size: 48px;
+    /*position: fixed;*/
+    letter-spacing: -0.96px;
+    background-color: none;
+
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.subtitle{
+    /* position: fixed; */
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 30px;
+    padding: 0;
+
+    color: #fe5e54;
+    font-size: 32px;
+    letter-spacing: -0.64px;
+}
+
+
+.caja-ventajas{
+    background-color: none;
+    margin: 50px;
+    padding: 0px;
+    width: 50%;
+    justify-content: space-between;
+    font-size: 25px;
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.ventaja{
+    display: flex;
+    align-items: center;
+}
+
+p.texto-ventaja{
+    margin-left: 10px;
+}
+
+section.button{
+    display: flex;
+}
+
+.cta{
+    margin: 25px;
+    width: 213px;
+    padding: 15px;
+    
+    color: #ffff;
+    background-color: black;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 0 0 1px 0 rgb(5, 5, 5);
+
+    display: flex;
+    flex-direction: row;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.cta:hover{
+    background-color: #fe5e54;
+}
+
+/*PAGINA DE GRACIAS*/
+
+p.gracias{
+    font-size: 30px;
+    
+}
+
+section.main-gracias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1600px){
+   .foto-centro, .foto-atras{
+    opacity: -1;
+   }
+
+   main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+    transition: 900ms opacity;
+   }
+
+   h1{
+    width: 100%;
+    margin-left: -120px;
+    text-align: center;
+   }
+
+   article{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .subtitle{
+    width: 100%;
+    margin-left: -113px;
+    text-align: center;
+   }
+
+ .caja-ventajas{
+    margin-left: 90px;
+ }
+
+ .button{
+    margin-left: 80px;
+ }
+
+}
+
+@media (max-width: 1320px){
+    /* section.button {
+        margin-left: 33px;
+    } */
+}
+
+/* @media screen and (max-width: 900px){
+      
+   
+
+    article.titulo-principal-register{
+        margin-left: -430px;
+        font-size: large;
+    }
+
+    form.caja-formulario{
+        margin-left: -300px;
+        width: 45%;
+        height: 440px;
+        font-size: large;
+    }
+   
+    input.cta-formulario{
+        font-size: 20px;
+    }
+
+    section.main-gracias{
+        margin-left: -930px;
+    }
+
+    main.contenido-curso{
+        margin-left: 10px;
+        width: 35%;
+        font-size: large;
+    }
+}  */

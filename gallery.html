@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    
+    <link rel="stylesheet" href="./css/burger.css" />
+    
+    <title>MKT School - Gallery</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img class="logo" src="./images/Logo.png" alt="logo"></a>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+  
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+            <li><a href="./login.html">Inicio sesión</a></li>
+            <li><a href="./register.html">Registro</a></li>
+            <li><a href="./cursos.html">Cursos</a></li>
+            <li><a href="/form.html">Contacto</a></li>
+          </ul>
+
+        </nav>
+  
+  
+      </header>
+    <section aria-label="Newest Photos">
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev"><i class="bi bi-arrow-left-short"></i></button>
+            <button class="carousel-button next" data-carousel-button="next"><i class="bi bi-arrow-right-short"></i></button>
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <img src="./images/gallery1.jpg" alt="Social Media #1">
+                </li>
+                <li class="slide">
+                    <img src="./images/gallery2.jpg" alt="Social Media #2">
+                </li>
+                <li class="slide">
+                    <img src="./images/gallery3.jpg" alt="Social Media #3">
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <script src="https://kit.fontawesome.com/3557bb0089.js" crossorigin="anonymous"></script> <!--Fontawesome-->
+    <script src="./javascript/burger.js"></script>
+    <script src="./javascript/gallery.js" defer></script>  
+</body>
+</html>
